@@ -71,8 +71,8 @@ sed -i 's/192.168.1.1/192.168.10.254/g' package/base-files/files/bin/config_gene
 [ ! -e package/lean/default-settings/files/zzz-default-settings ] && echo "DISTRIB_DESCRIPTION='Zilch($(TZ=UTC-8 date +%Y.%m.%d))@immortalwrt '" >> package/base-files/files/etc/openwrt_release
 
 #修改主机名
-sed -i "s/hostname='OpenWrt'/hostname='Redmi-AX3600'/g" package/base-files/files/bin/config_generate
-sed -i "s/hostname='ImmortalWrt'/hostname='Redmi-AX3600'/g" package/base-files/files/bin/config_generate
+sed -i "s/hostname='OpenWrt'/hostname='Xiaomi-AX3600'/g" package/base-files/files/bin/config_generate
+sed -i "s/hostname='ImmortalWrt'/hostname='Xiaomi-AX3600'/g" package/base-files/files/bin/config_generate
 
 #编译的固件文件名添加日期
 #sed -i 's/IMG_PREFIX:=$(VERSION_DIST_SANITIZED)/IMG_PREFIX:=$(shell TZ=UTC-8 date "+%Y%m%d")-$(VERSION_DIST_SANITIZED)/g' include/image.mk
